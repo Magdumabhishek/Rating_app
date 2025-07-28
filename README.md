@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS ratings (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     UNIQUE (store_id, user_id)
 );
---------------------------------------------------------------------------------------------------------------------------
+
 To create admin account, hit this route with given body in postman
 
 POST - http://localhost:5050/api/register
