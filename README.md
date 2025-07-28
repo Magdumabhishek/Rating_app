@@ -37,3 +37,16 @@ CREATE TABLE IF NOT EXISTS ratings (
     FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE,
     UNIQUE (store_id, user_id)
 );
+--------------------------------------------------------------------------------------------------------------------------
+To craete admin acconut, hit this route with given body in postman
+
+POST - http://localhost:5050/api/register
+body - {
+  "name": "Admin",
+  "email": "admin@example.com",
+  "password": "Admin@123",
+  "address": "Admin Office",
+  "role": "admin"
+}
+
+
