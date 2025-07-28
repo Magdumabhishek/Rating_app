@@ -38,7 +38,7 @@ CREATE TABLE IF NOT EXISTS ratings (
     UNIQUE (store_id, user_id)
 );
 --------------------------------------------------------------------------------------------------------------------------
-To craete admin acconut, hit this route with given body in postman
+To create admin account, hit this route with given body in postman
 
 POST - http://localhost:5050/api/register
 body - {
